@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idRLContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/idIVLogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/lenslogo"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/LogoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12OCR"
+        android:textColor="@color/white"
+        android:fontFamily="@font/hind_regular"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:layout_below="@id/idIVLogo"
+        ></TextView>
+
+
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LogoText"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/white" />
+
+</RelativeLayout>
